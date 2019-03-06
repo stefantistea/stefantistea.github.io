@@ -165,8 +165,8 @@ section h2 {
 }
 
 header.masthead {
-  padding-top: calc(6rem + 72px);
-  padding-bottom: 6rem;
+  padding-top: calc(4rem + 72px);
+  padding-bottom: 2rem;
 }
 
 header.masthead h1 {
@@ -181,8 +181,8 @@ header.masthead h2 {
 
 @media (min-width: 992px) {
   header.masthead {
-    padding-top: calc(6rem + 106px);
-    padding-bottom: 6rem;
+    padding-top: calc(4rem + 106px);
+    padding-bottom: 2rem;
   }
   header.masthead h1 {
     font-size: 4.75em;
@@ -345,7 +345,7 @@ a:focus, a:hover, a:active {
 }
 
 .bg-primary {
-  background-color: #cb2036 !important;
+  background-color: #000 !important;
 }
 
 .bg-secondary {
@@ -555,4 +555,20 @@ margin-bottom:30px;
   .webfolio2-modal .webfolio2-modal-dialog h2 {
     font-size: 3rem;
   }
+}
+
+.hed-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hed-grow:hover, .hed-grow:focus, .hed-grow:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
